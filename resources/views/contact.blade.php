@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>AXIT</title>
+    <title>Portfolio</title>
 </head>
 <body>
 <header class="header">
@@ -27,7 +27,7 @@
     <section class="contact">
         <div class="container">
             <div class="title contact__title">
-                <p>CONTACT US</p>
+                <p>CONTACT</p>
             </div>
             <div class="line contact__line"></div>
             <div class="text contact__text">
@@ -62,7 +62,7 @@
                 <img src="images/footer.png" alt="">
             </div>
             <div class="footer__text">
-                <p>© 2015 Axure Themes</p>
+                <p>© 2021 Axure Themes</p>
             </div>
         </div>
     </footer>

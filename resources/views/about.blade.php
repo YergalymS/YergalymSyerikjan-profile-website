@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>PrrtFolio</title>
+    <title>Portfolio</title>
 </head>
 <body>
 <header class="header">
@@ -28,7 +28,7 @@
         <div class="container">
             <div class="sub__wrapper">
                 <div class="picture sub__img">
-                    
+                    <img src="images/profile.jpg" alt="" width="450px">
                 </div>
                 <div class="sub__info">
                     <div class="title sub__title">
@@ -47,7 +47,7 @@
                             </div>
                             <div class="sub__item-info">
                                 <div class="sub__item-title">
-                                    <p>Title</p>
+                                    <p>Interests</p>
                                 </div>
                                 <div class="sub__item-text">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -67,7 +67,7 @@
                 <img src="images/footer.png" alt="">
             </div>
             <div class="footer__text">
-                <p>© 2015 Axure Themes</p>
+                <p>© 2021 Axure Themes</p>
             </div>
         </div>
     </footer>

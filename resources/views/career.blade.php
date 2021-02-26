@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>AXIT</title>
+    <title>Portfolio</title>
 </head>
 <body>
 <header class="header">
@@ -39,7 +39,7 @@
                         <img src="images/advantages1.png" alt="">
                     </div>
                     <div class="advantages__item-title">
-                        <p>Thoughtful Design</p>
+                        <p>Designer</p>
                     </div>
                     <div class="advantages__item-text">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
@@ -52,7 +52,7 @@
                         <img src="images/advantages2.png" alt="">
                     </div>
                     <div class="advantages__item-title">
-                        <p>Well Crafted</p>
+                        <p>Programmer</p>
                     </div>
                     <div class="advantages__item-text">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
@@ -65,7 +65,7 @@
                         <img src="images/advantages3.png" alt="">
                     </div>
                     <div class="advantages__item-title">
-                        <p>Thoughtful Design</p>
+                        <p>Critical thinker</p>
                     </div>
                     <div class="advantages__item-text">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
@@ -82,7 +82,7 @@
                 <img src="images/footer.png" alt="">
             </div>
             <div class="footer__text">
-                <p>© 2015 Axure Themes</p>
+                <p>© 2021 Axure Themes</p>
             </div>
         </div>
     </footer>

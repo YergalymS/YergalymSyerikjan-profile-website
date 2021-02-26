@@ -76,7 +76,7 @@ header{
     margin-top: 20px;
 }
 .form{
-    background:#9a9a9a;
+    background:#333333;
 }
 .form__wrapper{
     display: flex;
@@ -91,9 +91,6 @@ header{
 .form__logo{
     float: left;
     margin-bottom:34px;
-}
-.form__card{
-    margin-top: 142px;
 }
 .form__title {
     width:520px;
@@ -120,185 +117,13 @@ header{
     font-weight: 300;
     font-size: 16px;
 }
-.form__btn{
-    margin-bottom: 150px;
-}
-.form__btn a{
-    color:#fff;
-    border:2px solid #fff;
-    padding:14px 30px;
-}
-.form__card{
-    width:362px;
-    height: 362px;
-    background:#fff;
-    border-radius:5px;
-}
-.form__card-title p{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    color:#333;
-    text-align: center;
-}
-.form__card-title{
-    background:#f5f5f5;
-    padding:19px 50px;
-    border-radius: 5px;
-    margin-bottom: 40px;
-}
-.form__card-title span{
-    color:#ff8b36;
-}
-.form__card input{
-    border:none;
-    outline: none;
-    width:272px;
-    border-bottom: 1px solid #d6d6d6;
-    color:#d6d6d6;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    padding-left: 13px;
-}
-.form__card-name{
-    text-align: center;
-    margin-bottom: 44px;
-}
-.form__card-email{
-    text-align: center;
-    margin-bottom: 44px;
-}
-.form__card-password{
-    text-align: center;
-    margin-bottom: 70px;
-}
-.form__card-button{
-    text-align: center;
-    background: #ff9b51;
-    padding:22px 0;
-}
-.form__card-button a{
-    color:#fff;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    font-size: 15px;
-}
-/*SOCIALS*/
-.socials{
-    border-bottom: 1px solid #b7b7b7;
-}
-.socials__wrapper{
-    display: flex;
-}
-.socials__info{
-    margin-top: 23px;
-    margin-right: 100px;
-    margin-bottom: 24px;
-}
-.socials__title p {
-    font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    color:#000;
-}
-.socials__title{
-    margin-bottom: 15px;
-}
-.socials__text{
-    width:360px;
-}
-.socials__text p{
-    font-size: 14px;
-    font-family: 'Open Sans', sans-serif;
-    color:#c3c3c5;
-}
-.socials__items{
-    margin-top: 29px;
-}
-/*TABS*/
-.tabs__wrapper{
-    display: flex;
-}
-.tabs{
-    position: relative;
-    background:#f5f5f5;
-}
-.tab__line{
-    position: absolute;
-    left:0;
-    top:300px;
-    content: '';
-    display: block;
-    width:98px;
-    height: 44px;
-    background:#ff8b38;
-    border-radius:3px;
-}
-.tab__items{
-    background: #c7c7c7;
-    margin-top: 146px;
-    margin-right: 102px;
-    margin-bottom: 115px;
-}
-.tab__item{
-    background:#333333;
-    border-radius: 5px;
-    width:110px;
-    height: 110px;
-    text-align: center;
-    margin-bottom: 1px;
-}
-.tab__item-first{
-    background:#ff8b38;
-    border-radius: 5px;
-    width:110px;
-    height: 110px;
-    text-align: center;
-    margin-bottom: 1px;
-}
-.tab__item p,.tab__item-first p{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    font-size: 15px;
-    padding-top: 50px;
-}
-.tabs__title{
-    margin-bottom: 55px;
-    margin-top: 160px;
-}
-.tabs__title p{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    color:#000;
-}
-.tabs__text{
-    width:500px;
-    margin-right:70px;
-}
-.tabs__text p{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    color:#86878b;
-    line-height: 20px;
-    margin-bottom: 30px;
-}
-.tabs__img{
-    margin-top: 170px;
-}
 /*SUB*/
 .sub__wrapper{
     display: flex;
     justify-content: space-between;
 }
-.picture{
-    width:550px;
-    height:304px;
-    background:#9a9a9a;
-}
 .sub__img{
     margin-right: 190px;
-    margin-top: 130px;
 }
 .title p{
     font-family: 'Open Sans', sans-serif;
@@ -429,123 +254,8 @@ header{
 .advantages__item-title{
     margin-bottom: 31px;
 }
-/*PRICES*/
-.prices{
-    background:#f5f5f5;
-}
-.prices__title{
-    padding-top: 108px; 
-}
-.prices__items{
-    display: flex;
-    padding-bottom:95px;
-}
-.prices__item{
-    width:343px;
-    margin-right: 40px;
 
-}
-.prices__item-title{
-    background:#333333;
-    height:59px;
-    text-align: center;
-    margin-bottom: 1px;
-}
-.prices__item-title p{
-    padding-top:20px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-}
-.prices__item-price{
-    background: #333333;
-    height:151px;
-    text-align: center;
-}
-.first{
-    font-weight: 700;
-    font-size: 94px;
-    padding-top: 10px;
-    padding-bottom: 15px;
-}
-.prices__item-price span{
-    font-weight: 700;
-    font-size: 35px;
-}
-.second{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    color:#999;
-}
-.prices__item-line-second{
-    background:#ff8b38;
-    padding:15px;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-}
-.prices__item-line{
-    height: 5px;
-    background:#ff8b38;
-}
-.prices__list p{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    color:#86878b;
-    text-align:center;
-    text-transform: uppercase;
-    padding:15px;
-    border-bottom: 1px solid #f5f5f5;
-    background:#fff;
-}
-.down{
-    margin-top: 38px;
-}
-/*COMMENTS*/
-.comments__items{
-    display: flex;
-    margin-left: 30px;
-    margin-bottom: 100px;
-}
-.comment__item{
-    margin-right: 121px;
-}
-.comment__item-text{
-    width:252px;
-    padding-bottom:52px;
-    padding-left: 12px;
-    padding-top: 27px;
-    padding-right: 13px;
-    margin-bottom: 8px;
-}
-.comment__item-text p{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    color:#86878b; 
-}
-.comment__item-author{
-    display: flex;
-    align-items: center;
-}
-.comment__item-title p{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    color:#000;
-    margin-bottom: 10px;
-}
-.comment__item-occup p{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    color:#86878b;
-}
-.comment__item-img{
-    margin-right: 15px;
-}
-/*CONTENT*/
+/*CONTACT*/
 .contact__wrapper{
     display: flex;
 }
