@@ -54,6 +54,8 @@ Route::get('blog/create', function() {
 
 Route::post('blog/create', [BlogController::class, 'store'])->name('add-post');
 
+Route::get('post/{id}', [BlogController::class, 'get_post']);
+
 
 
 
