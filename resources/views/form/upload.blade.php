@@ -7,7 +7,7 @@
     <title>Upload Form</title>
 </head>
 <body>
-    <form method="POST" action="{{ route('add-form') }}">
+    <form method="POST" action="{{ route('add-form') }}" enctype="multipart/form-data">
         @csrf
         <input type="text" name="name" placeholder="name">
         <input type="text" name="surname" placeholder="surname">

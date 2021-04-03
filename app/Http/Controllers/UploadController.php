@@ -18,35 +18,30 @@ class UploadController extends Controller
     }
     public function uploadsubmit(Request $request) {
 
-        $this->validate($request, [
-            'photos' => 'required',
+        // $test = $request->file('photos')->getError();
+        // dd($test);
+        $request->validate([
+            'name' => 'required',
+            'surname' => 'required',
+            'email' => 'required',
+            'photos' => 'required|mimes:jpg,png,jpeg,gif|max:5048'
         ]);
-        if(true) {
-            $file = $request->file('photos');
-            // $filename = $file->getClientOriginalName();
-            // $extension = $file->getClientOriginalExtension();
-            // $check=in_array($extension);
-            // dd($check);
-            
-            if(true) {
-                $items = Form::create($request->all());
-                dd(20);
-                foreach ($request->photos as $photo) {
-                    $filename = $photo->store('photos');
-                    Form::create([
-                        'name' => $request->name,
-                        'surname' => $request->surname,
-                        'email' => $request->email,
-                        'filename' => $request->filename
-                    ]);
-                }
-                echo "Upload Successfully";
-    
-            } else {
-                echo "Alert";
-            }
-            
-        }
-        return back();
+        
+        $newImageName = time() . '-' . $request->name . '.' . $request->photos->extension();
+        
+        $request->photos->move(public_path('uploads'), $newImageName);
+
+
+        // dd($test);
+ 
+        Form::create([
+            'name' => $request->name,
+            'surname' => $request->surname,
+            'email' => $request->email,
+            'filename' => $newImageName
+        ]);
+
+        return redirect('/form/upload');
+
     }
 }
