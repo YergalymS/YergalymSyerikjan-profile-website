@@ -13,6 +13,6 @@ class MailController extends Controller
         $objectDemo = new \stdClass();
         // $objectDemo -> reciever = 'Yergalym';
         // $objectDemo -> sender = 'Yergalym';
-        Mail::to('190103213@stu.sdu.edu.kz')->send(new DemoMail($objectDemo));
+        Mail::to('190103315@stu.sdu.edu.kz')->send(new DemoMail($objectDemo));
     }
 }

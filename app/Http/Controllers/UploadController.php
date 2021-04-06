@@ -44,4 +44,12 @@ class UploadController extends Controller
         return redirect('/form/upload');
 
     }
+    public function details($id) {
+        $form = Form::find($id);
+
+        if($form == null) {
+            return response(['message' => 'client not found'], 404);
+        }   
+        return view('form.detail')->with(['form' => $form]);
+    }
 }

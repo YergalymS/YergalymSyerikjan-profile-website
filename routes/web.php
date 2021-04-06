@@ -65,6 +65,7 @@ Route::get('post/{id}', [BlogController::class, 'get_post']);
 Route::post('form/upload', [UploadController::class, 'uploadsubmit'])->name('add-form');
 Route::get('form/upload', [UploadController::class,'uploadform']);
 Route::get('form/index', [UploadController::class, 'index' ]);
+Route::get('form/{id}', [UploadController::class, 'details']);
 
 //mail
 Route::get('/send', [MailController::class, 'send']);
