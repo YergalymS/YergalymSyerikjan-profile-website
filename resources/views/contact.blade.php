@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <title>Portfolio</title>
 </head>
 <body>
@@ -16,9 +16,9 @@
                 </div>
                 <div class="header__nav">
                     <ul>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/career">Career</a></li>
-                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="{{ url(app()->getLocale() . '/about') }}">{{__('welcome.about')}}</a></li>
+                        <li><a href="{{ url(app()->getLocale() . '/career') }}">{{__('welcome.career')}}</a></li>
+                        <li><a href="{{ url(app()->getLocale() . '/contact') }}">{{__('welcome.contact')}}</a></li>
                     </ul>
                 </div>
             </div>
@@ -27,7 +27,7 @@
     <section class="contact">
         <div class="container">
             <div class="title contact__title">
-                <p>CONTACT</p>
+                <p>{{__('welcome.contact')}}</p>
             </div>
             <div class="line contact__line"></div>
             <div class="text contact__text">
@@ -36,30 +36,30 @@
             <div class="contact__wrapper">
                 <div class="content__wrapper-left">
                     <div class="content__name">
-                        <p>Name</p>
+                        <p>{{__('welcome.name')}}</p>
                     </div>
                     <div class="content__email">
-                        <p>Email</p>
+                        <p>{{__('welcome.email')}}</p>
                     </div>
                     <div class="content__subject">
-                        <p>Subject</p>
+                        <p>{{__('welcome.subject')}}</p>
                     </div>
                 </div>
                 <div class="content__wrapper-right">
                     <div class="content__message">
-                        <p>Message</p>
+                        <p>{{__('welcome.message')}}</p>
                     </div>
                 </div>
             </div>
             <div class="content__btn">
-                <a href="#">Send Message</a>
+                <a href="#">{{__('welcome.send message')}}</a>
             </div>
         </div>
     </section>
     <footer>
         <div class="container">
             <div class="footer__img">
-                <img src="images/footer.png" alt="">
+                <img src="{{asset('images/footer.png')}}" alt="">
             </div>
             <div class="footer__text">
                 <p>© 2021 Axure Themes</p>

@@ -9,6 +9,11 @@ use App\Models\Form;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\UploadController;
 use App\Http\Controllers\MailController;
+use App\Http\Middleware\SetLocale;
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Auth;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -20,22 +25,35 @@ use App\Http\Controllers\MailController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', function(){
+    return redirect(app()->getLocale());
+}); 
 
-Route::get('/', function () {
-    // return view('welcome');
-    return view('welcome');
-});
+Route::group([
+    'prefix' => '{locale}', 
+    'where' => ['locale' => '[a-zA-z]{2}'],
+    'middleware' => 'setlocale',
+], function() {
 
-Route::get('/about', function () {
-    return view('about');
-});
+    Auth::routes();
 
-Route::get('/contact', function () {
-    return view('contact');
-});
+    Route::get('/', function () {
+        // return view('welcome');
+        return view('welcome');
+    });
 
-Route::get('/career', function () {
-    return view('career');
+    Route::get('/about', function () {
+        return view('about');
+    })->name('about');
+
+    Route::get('/contact', function () {
+        return view('contact');
+    });
+
+    Route::get('/career', function () {
+        return view('career');
+    });
+
 });
 
 Route::get('/post/create', function () {
@@ -70,5 +88,14 @@ Route::get('form/{id}', [UploadController::class, 'details']);
 //mail
 Route::get('/send', [MailController::class, 'send']);
 
+//localization
+Route::get('/{lang}', function($lang) {
+    App::setlocale($lang);
+    return view('welcome');
+});
 
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

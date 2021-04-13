@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
 </head>
 <body>
     <header class="header">
@@ -16,9 +16,9 @@
                 </div>
                 <div class="header__nav">
                     <ul>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/career">Career</a></li>
-                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="{{ url(app()->getLocale() . '/about') }}">{{__("welcome.about")}}</a></li>
+                        <li><a href="{{ url(app()->getLocale() . '/career') }}">{{__("welcome.career")}}</a></li>
+                        <li><a href="{{ url(app()->getLocale() . '/contact') }}">{{__("welcome.contact")}}</a></li>
                     </ul>
                 </div>
             </div>
@@ -33,7 +33,7 @@
                     </div>
                     
                     <div class="form__title">
-                        <h1>Programmer / Designer</h1>
+                        <h1>{{__('welcome.specialty')}}</h1>
                     </div>
                     <div class="form__line"></div>
                     
@@ -53,7 +53,7 @@
     <footer>
         <div class="container">
             <div class="footer__img">
-                <img src="images/footer.png" alt="">
+                <img src="{{asset('images/footer.png')}}" alt="">
             </div>
             <div class="footer__text">
                 <p>© 2021 Axure Themes</p>

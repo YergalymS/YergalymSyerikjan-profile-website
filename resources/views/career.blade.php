@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <title>Portfolio</title>
 </head>
 <body>
@@ -16,9 +16,9 @@
                 </div>
                 <div class="header__nav">
                     <ul>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/reviews">Career</a></li>
-                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="{{ url(app()->getLocale() . '/about') }}">{{__('welcome.about')}}</a></li>
+                        <li><a href="{{ url(app()->getLocale() . '/career') }}">{{__('welcome.career')}}</a></li>
+                        <li><a href="{{ url(app()->getLocale() . '/contact') }}">{{__('welcome.contact')}}</a></li>
                     </ul>
                 </div>
             </div>
@@ -27,7 +27,7 @@
     <section class="advantages">
         <div class="container">
             <div class="title advantages__title">
-                <p>Career</p>
+                <p>{{__('welcome.career')}}</p>
             </div>
             <div class="line advantages__line"></div>
             <div class="text advantages__text">
@@ -36,10 +36,10 @@
             <div class="advantages__items">
                 <div class="advantages__item">
                     <div class="advantages__item-img">
-                        <img src="images/advantages1.png" alt="">
+                        <img src="{{asset('images/advantages1.png')}}" alt="">
                     </div>
                     <div class="advantages__item-title">
-                        <p>Designer</p>
+                        <p>{{__('welcome.developer')}}</p>
                     </div>
                     <div class="advantages__item-text">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
@@ -49,10 +49,10 @@
                 </div>
                 <div class="advantages__item">
                     <div class="advantages__item-img">
-                        <img src="images/advantages2.png" alt="">
+                        <img src="{{asset('images/advantages2.png')}}" alt="">
                     </div>
                     <div class="advantages__item-title">
-                        <p>Programmer</p>
+                        <p>{{__('welcome.programmer')}}</p>
                     </div>
                     <div class="advantages__item-text">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
@@ -62,10 +62,10 @@
                 </div>
                 <div class="advantages__item">
                     <div class="advantages__item-img">
-                        <img src="images/advantages3.png" alt="">
+                        <img src="{{asset('images/advantages3.png')}}" alt="">
                     </div>
                     <div class="advantages__item-title">
-                        <p>Critical thinker</p>
+                        <p>{{__('welcome.critical thinker')}}</p>
                     </div>
                     <div class="advantages__item-text">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
@@ -79,7 +79,7 @@
     <footer>
         <div class="container">
             <div class="footer__img">
-                <img src="images/footer.png" alt="">
+                <img src="{{asset('images/footer.png')}}" alt="">
             </div>
             <div class="footer__text">
                 <p>© 2021 Axure Themes</p>

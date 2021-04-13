@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <title>Portfolio</title>
 </head>
 <body>
@@ -16,9 +16,9 @@
                 </div>
                 <div class="header__nav">
                     <ul>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/career">Career</a></li>
-                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="{{ url(app()->getLocale() . '/about') }}">{{__('welcome.about')}}</a></li>
+                        <li><a href="{{ url(app()->getLocale() . '/career') }}">{{__('welcome.career')}}</a></li>
+                        <li><a href="{{ url(app()->getLocale() . '/contact') }}">{{__('welcome.contact')}}</a></li>
                     </ul>
                 </div>
             </div>
@@ -28,11 +28,11 @@
         <div class="container">
             <div class="sub__wrapper">
                 <div class="picture sub__img">
-                    <img src="images/profile.jpg" alt="" width="450px">
+                    <img src="{{asset('images/profile.jpg')}}" alt="" width="450px">
                 </div>
                 <div class="sub__info">
                     <div class="title sub__title">
-                        <p>About me</p>
+                        <p>{{__('welcome.about me')}}</p>
                     </div>
                     <div class="line sub__line"></div>
                     <div class="text sub__text">
@@ -43,11 +43,11 @@
                     <div class="sub__items">
                         <div class="sub__item">
                             <div class="sub__item-img">
-                                <img src="images/Group 1.png" alt="">
+                                <img src="{{asset('images/Group 1.png')}}" alt="">
                             </div>
                             <div class="sub__item-info">
                                 <div class="sub__item-title">
-                                    <p>Interests</p>
+                                    <p>{{__('welcome.interests')}}</p>
                                 </div>
                                 <div class="sub__item-text">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -64,7 +64,7 @@
     <footer>
         <div class="container">
             <div class="footer__img">
-                <img src="images/footer.png" alt="">
+                <img src="{{asset('images/footer.png')}}" alt="">
             </div>
             <div class="footer__text">
                 <p>© 2021 Axure Themes</p>
