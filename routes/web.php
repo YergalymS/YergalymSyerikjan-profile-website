@@ -86,7 +86,9 @@ Route::get('form/index', [UploadController::class, 'index' ]);
 Route::get('form/{id}', [UploadController::class, 'details']);
 
 //mail
-Route::get('/send', [MailController::class, 'send']);
+// Route::get('/send', [MailController::class, 'send'])->name('send');
+Route::get('/send', [MailController::class, 'view']);
+Route::post('/send', [MailController::class, 'store']);
 
 //localization
 Route::get('/{lang}', function($lang) {

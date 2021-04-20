@@ -14,5 +14,8 @@ return [
     'interests' => 'Interests',
     'developer' => 'Developer',
     'programmer' => 'Programmer',
-    'critical thinker' => 'Critical thinker'
+    'critical thinker' => 'Critical thinker',
+    'full' => 'I am a full stack web developer',
+    'info' => "I am from Mongolia and I'm 19. I study in SDU as a sophomore in Information Systems.",
+    'question' => 'Contact me if you have any questions that interests you!'
 ];

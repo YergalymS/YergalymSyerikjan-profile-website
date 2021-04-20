@@ -31,29 +31,26 @@
             </div>
             <div class="line contact__line"></div>
             <div class="text contact__text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>{{__('welcome.question')}}</p>
             </div>
-            <div class="contact__wrapper">
-                <div class="content__wrapper-left">
-                    <div class="content__name">
-                        <p>{{__('welcome.name')}}</p>
+            <form method="POST" class="input_fields" action="{{url('/send')}}">
+                @csrf
+                <div class="contact__wrapper">
+                    <div class="content__wrapper-left">
+                            <input type="text" name="name" autocomplete="false" placeholder="{{__('welcome.name')}}">
+                            <input type="text" name="email" placeholder="{{__('welcome.email')}}">
+                            <input type="text" name="subject" placeholder="{{__('welcome.subject')}}">
                     </div>
-                    <div class="content__email">
-                        <p>{{__('welcome.email')}}</p>
-                    </div>
-                    <div class="content__subject">
-                        <p>{{__('welcome.subject')}}</p>
+                    <div class="content__wrapper-right">
+                        <textarea name="message" placeholder="{{__('welcome.message')}}"></textarea>
                     </div>
                 </div>
-                <div class="content__wrapper-right">
-                    <div class="content__message">
-                        <p>{{__('welcome.message')}}</p>
-                    </div>
+                
+                <div class="content__btn">
+                    <button type="submit" >{{__('welcome.send message')}}</button>
+                    
                 </div>
-            </div>
-            <div class="content__btn">
-                <a href="#">{{__('welcome.send message')}}</a>
-            </div>
+            </form>
         </div>
     </section>
     <footer>
@@ -62,7 +59,7 @@
                 <img src="{{asset('images/footer.png')}}" alt="">
             </div>
             <div class="footer__text">
-                <p>© 2021 Axure Themes</p>
+                <p>© 2021 Portfolio</p>
             </div>
         </div>
     </footer>

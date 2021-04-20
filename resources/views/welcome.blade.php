@@ -25,9 +25,11 @@
         </div>
     </header>
     <section class="form">
+        {{-- <img src="{{asset('images/background.jpg')}}" alt=""> --}}
         <div class="container">
             <div class="form__wrapper">
                 <div class="form__about">
+                    
                     <div class="form__logo">
                         Yergalym Syerikjan
                     </div>
@@ -38,11 +40,15 @@
                     <div class="form__line"></div>
                     
                     <div class="form__text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                            euismod bibendum laoreet. Proin gravida dolor sit amet lacus
-                            accumsan et viverra justo commodo.</p>
+                        <p style="font-size: 20px">{{__('welcome.full')}}</p>
+                    </div>
+                    <div class="form__image">
+                        <img src="{{asset('images/picture1.jfif')}}" alt="" width="470px">
                     </div>
                 </div>
+                
+
+                
                 
             </div>
         </div>
@@ -56,7 +62,7 @@
                 <img src="{{asset('images/footer.png')}}" alt="">
             </div>
             <div class="footer__text">
-                <p>© 2021 Axure Themes</p>
+                <p>© 2021 Portfolio</p>
             </div>
         </div>
     </footer>

@@ -76,15 +76,24 @@ header{
     margin-top: 20px;
 }
 .form{
-    background:#333333;
+    /* background-image: url("https://www.digitaldesignjournal.com/wp-content/uploads/2018/07/Programming-World-Map-Wallpaper.jpg");
+    /* background-repeat: no-repeat;
+    /* background-size: cover; */ 
+    background-color: #181717;
 }
 .form__wrapper{
     display: flex;
+}
+.form__image img{
+    float: right;
+    margin-top: -307px;
+    margin-right: -40px;
 }
 .form__about{
     float: left;
     padding: 40px;
     width: 1000px;
+    height: 234px;
     margin: 100px;
     background-color: #000000;
 }
@@ -259,44 +268,34 @@ header{
 .contact__wrapper{
     display: flex;
 }
-.content__name p, .content__email p, .content__subject p,.content__message p{
+input{
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
-    color:#bdbdbd;
-}
-.content__name{
+    background: transparent;
+    border: 0;
     border-bottom: 1px solid #b3b3b3;
-    width:526px;
-    margin-right: 75px;
-    padding-bottom: 9px;
-    padding-left: 13px;
-    margin-bottom: 43px;
+    width:450px;
+    margin: 10px 0;
+    padding: 20px 20px 10px 20px;
 }
-.content__email{
-    border-bottom: 1px solid #b3b3b3;
-    width:526px;
-    padding-bottom: 9px;
-    padding-left: 13px;
-    margin-bottom: 43px;
+::-webkit-input-placeholder{
+    color: #bdbdbd;
 }
-.content__subject{
+textarea{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    border: 0;
     border-bottom: 1px solid #b3b3b3;
-    width:526px;
-    padding-bottom: 9px;
-    padding-left: 13px;
-}
-.content__message{
-    border-bottom: 1px solid #b3b3b3;
-    width:526px;
-    padding-left: 13px;
-    padding-bottom: 142px;
+    width:450px;
+    margin: 10px 0;
+    padding: 20px 20px 128px 20px;
 }
 .content__btn{
     text-align: center;
     margin-top: 57px;
     margin-bottom: 82px;
 }
-.content__btn a{
+.content__btn button{
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 15px;
@@ -304,6 +303,8 @@ header{
     background:#ff9b51;
     padding:19px 20px;
     border-radius:5px;
+    border: 0;
+
 }
 /*FOOTER*/
 footer{

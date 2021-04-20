@@ -36,9 +36,7 @@
                     </div>
                     <div class="line sub__line"></div>
                     <div class="text sub__text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean 
-                            euismod bibendum laoreet. Proin gravida dolor sit amet lacus 
-                            accumsan et viverra justo commodo.</p>
+                        <p>{{__('welcome.info')}}</p>
                     </div>
                     <div class="sub__items">
                         <div class="sub__item">
@@ -50,8 +48,7 @@
                                     <p>{{__('welcome.interests')}}</p>
                                 </div>
                                 <div class="sub__item-text">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                        Aenean euismod bibendum laoreet.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis reprehenderit incidunt recusandae, alias facilis quia quibusdam rerum assumenda laborum similique nam qui, ipsam eveniet, impedit tempore accusamus ut aperiam soluta!</p>
                                 </div>
                             </div>
                         </div>
@@ -67,7 +64,7 @@
                 <img src="{{asset('images/footer.png')}}" alt="">
             </div>
             <div class="footer__text">
-                <p>© 2021 Axure Themes</p>
+                <p>© 2021 Portfolio</p>
             </div>
         </div>
     </footer>

@@ -11,15 +11,16 @@ class DemoMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $demo;
+    public $data;
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($demo)
+    public function __construct($data)
     {
-        $this->demo=$demo;
+        
+        $this->data = $data;
     }
 
     /**
@@ -29,6 +30,6 @@ class DemoMail extends Mailable
      */
     public function build()
     {
-        return $this->from('erka0103@gmail.com')->view('mails.demo');
+        return $this->from("erka0103@gmail.com")->view('mails.demo');
     }
 }

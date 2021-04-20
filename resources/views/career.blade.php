@@ -31,7 +31,7 @@
             </div>
             <div class="line advantages__line"></div>
             <div class="text advantages__text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, quis rem corrupti repudiandae tempora placeat odio debitis totam eos molestias nesciunt dolore architecto! Error voluptate doloremque, aliquid ipsa similique ad!</p>
             </div>
             <div class="advantages__items">
                 <div class="advantages__item">
@@ -82,7 +82,7 @@
                 <img src="{{asset('images/footer.png')}}" alt="">
             </div>
             <div class="footer__text">
-                <p>© 2021 Axure Themes</p>
+                <p>© 2021 Portfolio</p>
             </div>
         </div>
     </footer>
