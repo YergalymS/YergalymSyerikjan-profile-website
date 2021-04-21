@@ -9,9 +9,12 @@ use App\Models\Form;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\UploadController;
 use App\Http\Controllers\MailController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\LanguageController;
 use App\Http\Middleware\SetLocale;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
+
 
 
 
@@ -86,15 +89,18 @@ Route::get('form/index', [UploadController::class, 'index' ]);
 Route::get('form/{id}', [UploadController::class, 'details']);
 
 //mail
-// Route::get('/send', [MailController::class, 'send'])->name('send');
 Route::get('/send', [MailController::class, 'view']);
-Route::post('/send', [MailController::class, 'store']);
+Route::post('/send', [MailController::class, 'send']);
+//
+Route::post('/store', [ContactController::class, 'store']);
+
 
 //localization
 Route::get('/{lang}', function($lang) {
     App::setlocale($lang);
     return view('welcome');
 });
+Route::get('/{lang}', ['as' => 'lang.switch', 'uses' => 'App\Http\Controllers\LanguageController@switchLang']);
 
 
 

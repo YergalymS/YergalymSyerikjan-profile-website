@@ -30,6 +30,8 @@ class DemoMail extends Mailable
      */
     public function build()
     {
-        return $this->from("erka0103@gmail.com")->view('mails.demo');
+        return $this->from("erka0103@gmail.com")->view('mails.demo')->attach($this->data['file']->getRealPath(), [
+            'as' => $this->data['file']->getClientOriginalName()
+        ]);
     }
 }

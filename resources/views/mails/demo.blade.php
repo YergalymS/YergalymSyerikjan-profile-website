@@ -8,15 +8,11 @@
 </head>
 <body>
     <div>
-        Email from {{$data['email']}}
+        Email from <strong>{{$data['email']}}</strong> 
     </div>
     <br>
     <div>
-        {{$data['subject']}}
-    </div>
-    <br>
-    <div>
-        Hello! Yergalym
+        <em>{{$data['subject']}}</em>
     </div>
     <br>
     <div>

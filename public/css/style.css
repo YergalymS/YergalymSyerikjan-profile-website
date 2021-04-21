@@ -75,6 +75,22 @@ header{
 .header__logo{
     margin-top: 20px;
 }
+.nav-link-dropdown-toggle{
+    cursor: pointer;
+    padding: 10px;
+}
+.nav-item-dropdown:hover .dropdown-menu{
+    visibility: visible;
+}
+.dropdown-menu{
+    margin-top: 10px;
+    visibility: hidden;
+    background-color: #000000;
+}
+.dropdown-item{
+    padding: 10px;
+    display: flex;
+}
 .form{
     /* background-image: url("https://www.digitaldesignjournal.com/wp-content/uploads/2018/07/Programming-World-Map-Wallpaper.jpg");
     /* background-repeat: no-repeat;
@@ -288,7 +304,7 @@ textarea{
     border-bottom: 1px solid #b3b3b3;
     width:450px;
     margin: 10px 0;
-    padding: 20px 20px 128px 20px;
+    padding: 20px 20px 54px 20px;
 }
 .content__btn{
     text-align: center;

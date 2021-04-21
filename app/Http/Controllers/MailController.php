@@ -13,15 +13,15 @@ class MailController extends Controller
     public function view() {
         return view('contact');
     }
-    public function store(Request $request){
+    public function send(Request $request){
         
         $data = request()->validate([
             'name' => 'required',
             'email' => 'required|email',
             'subject' => 'required',
+            'file' => 'required|file',
             'message' => 'required'
         ]);
-        
         
         // dd(request()->all());
         Mail::to('190103213@stu.sdu.edu.kz')->send(new DemoMail($data));
@@ -29,16 +29,4 @@ class MailController extends Controller
         return redirect('en/contact');
     }
     
-    
-    // public function send() {
-        
-    //     // $this->name='';
-    //     // $this->email = '';
-    //     // $this->subject = '';
-    //     // $this->message = '';
-        
-
-    //     // dd(request()->all());
-    //     Mail::to('190103213@stu.sdu.edu.kz')->send(new DemoMail($this->name,$this->email,$this->subject,$this->message));
-    // }
 }
